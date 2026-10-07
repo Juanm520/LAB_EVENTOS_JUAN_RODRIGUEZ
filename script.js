@@ -20,6 +20,33 @@ function alertaEnlaces() {
 }
 
 // Tarea extra>
+// Selecciona contenedor.
+const contenedor = document.getElementById("contenedor")
 
+// Selecciona clase .segundo.
+const classSegundo = contenedor.getElementsByClassName("segundo")
 
+// Selecciona clase .tercero dentro de la lista ol.
+const classTerceroDelOlLi = contenedor.querySelectorAll("ol .tercero")
+
+// Cambia el titulo del contenedor.
+const textContenedor = contenedor.querySelector("p")
+textContenedor.innerText = "¡Hola!"
+textContenedor.style.fontWeight = "bold"
+
+// Agrega y desagrega la clase .principal al div con clase .footer
+const footer = document.querySelector("div.footer")
+footer.classList.add('principal')
+console.log(footer.classList)
+footer.classList.remove('principal')
+console.log(footer.classList)
+
+// Crea un elemento li.
+const nuevoLi =document.createElement("li")
+nuevoLi.innerText = "cuatro"
+nuevoLi.style.fontWeight = 'bold'
+
+// Añade el elemento a ul.
+const ul = document.querySelector("ul")
+ul.appendChild(nuevoLi)
 
