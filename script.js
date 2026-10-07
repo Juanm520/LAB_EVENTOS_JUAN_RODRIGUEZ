@@ -19,3 +19,7 @@ function alertaEnlaces() {
     alert(`Enlaces totales: ${datosEnlaces.length} \nPrimer enlace: ${datosEnlaces[0].href} \nUltimo enlace: ${datosEnlaces[datosEnlaces.length - 1].href}`)
 }
 
+// Tarea extra>
+
+
+
